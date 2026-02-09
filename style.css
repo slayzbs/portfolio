@@ -637,7 +637,7 @@ input, textarea, select {
     font-size: var(--section-size);
     color: var(--primary-text);
     letter-spacing: -0.03em;
-    text-transform: lowercase;
+    text-transform: none !important;
     margin: 0;
     font-weight: 800;
     line-height: 1.2;
