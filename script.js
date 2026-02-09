@@ -172,78 +172,7 @@ const projects = [
         github: 'https://github.com/slayzbs/',
         stars: 54
     },
-   {
-        number: '03,
-        title: 'Example',
-        tech: 'go',
-        description: 'Blablabla',
-        github: 'https://github.com/slayzbs/',
-        liveUrl: 'https://',
-        stars: 456
-    },
-   {
-        number: '04',
-        title: 'Example',
-        tech: 'go',
-        description: 'Blablabla',
-        github: 'https://github.com/slayzbs/',
-        liveUrl: 'https://',
-        stars: 456
-    },
-   {
-        number: '05',
-        title: 'Example',
-        tech: 'go',
-        description: 'Blablabla',
-        github: 'https://github.com/slayzbs/',
-        liveUrl: 'https://',
-        stars: 456
-    },
-   {
-        number: '06',
-        title: 'Example',
-        tech: 'go',
-        description: 'Blablabla',
-        github: 'https://github.com/slayzbs/',
-        liveUrl: 'https://',
-        stars: 456
-    },
-   {
-        number: '07',
-        title: 'Example',
-        tech: 'go',
-        description: 'Blablabla',
-        github: 'https://github.com/slayzbs/',
-        liveUrl: 'https://',
-        stars: 456
-    },
-   {
-        number: '08',
-        title: 'Example',
-        tech: 'go',
-        description: 'Blablabla',
-        github: 'https://github.com/slayzbs/',
-        liveUrl: 'https://',
-        stars: 456
-    },
-   {
-        number: '09',
-        title: 'Example',
-        tech: 'go',
-        description: 'Blablabla',
-        github: 'https://github.com/slayzbs/',
-        liveUrl: 'https://',
-        stars: 456
-    },
-   {
-        number: '10',
-        title: 'Example',
-        tech: 'go',
-        description: 'Blablabla',
-        github: 'https://github.com/slayzbs/',
-        liveUrl: 'https://',
-        stars: 456
-    },
+   ]
 
 /* ==========================================
    RENDER PROJECTS
