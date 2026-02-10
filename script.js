@@ -87,7 +87,7 @@ window.addEventListener('scroll', () => {
    BACK TO TOP BUTTON
    ========================================== */
 
-const backToTopBtn = document.getElementById('backToTop');
+const backToTopBtn = document.getElementById('back-to-top');
 
 window.addEventListener('scroll', () => {
     if (backToTopBtn) {
@@ -178,36 +178,35 @@ const projects = [
    RENDER PROJECTS
    ========================================== */
 
-const projectsGrid = document.querySelector('.projects-grid[data-astro-cid-j7pv25f6]');
+const projectsGrid = document.querySelector('.projects-grid');
 
 projects.forEach((project, index) => {
     const projectEl = document.createElement('div');
     projectEl.className = 'project slide-up';
-    projectEl.setAttribute('data-astro-cid-mspuyifq', '');
     projectEl.style.animationDelay = `${index * 0.1}s`;
 
     // Build live site link if exists
     const liveSiteLink = project.liveUrl 
-        ? `<a href="${project.liveUrl}" target="_blank" rel="noopener noreferrer" class="project-link" data-astro-cid-mspuyifq>live site</a>` 
+        ? `<a href="${project.liveUrl}" target="_blank" rel="noopener noreferrer" class="project-link">live site</a>` 
         : '';
 
     projectEl.innerHTML = `
-        <div class="project-number" data-astro-cid-mspuyifq>${project.number}</div>
-        <div class="project-content" data-astro-cid-mspuyifq>
-            <div class="project-info" data-astro-cid-mspuyifq>
-                <div class="project-meta" data-astro-cid-mspuyifq>
-                    <span class="project-tech" data-astro-cid-mspuyifq>${project.tech}</span>
+        <div class="project-number">${project.number}</div>
+        <div class="project-content">
+            <div class="project-info">
+                <div class="project-meta">
+                    <span class="project-tech">${project.tech}</span>
                 </div>
-                <h3 data-astro-cid-mspuyifq>${project.title}</h3>
-                <p class="project-description" data-astro-cid-mspuyifq>${project.description}</p>
-                <div class="project-links" data-astro-cid-mspuyifq>
-                    <a href="${project.github}" target="_blank" rel="noopener noreferrer" class="project-link" data-astro-cid-mspuyifq>github</a>
+                <h3>${project.title}</h3>
+                <p class="project-description">${project.description}</p>
+                <div class="project-links">
+                    <a href="${project.github}" target="_blank" rel="noopener noreferrer" class="project-link">github</a>
                     ${liveSiteLink}
-                    <span class="star-badge" aria-label="${project.stars} stars" data-github="${project.github}" data-stars="${project.stars}" data-role="star-badge" data-astro-cid-mspuyifq>
-                        <svg viewBox="0 0 24 24" aria-hidden="true" data-astro-cid-mspuyifq>
-                            <path d="M12 .587l3.668 7.431L23.4 9.75l-5.7 5.556L19.335 24 12 19.897 4.665 24l1.634-8.694L.6 9.75l7.732-1.732z" data-astro-cid-mspuyifq></path>
+                    <span class="star-badge" aria-label="${project.stars} stars" data-github="${project.github}" data-stars="${project.stars}" data-role="star-badge">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 .587l3.668 7.431L23.4 9.75l-5.7 5.556L19.335 24 12 19.897 4.665 24l1.634-8.694L.6 9.75l7.732-1.732z"></path>
                         </svg>
-                        <span class="star-count" data-astro-cid-mspuyifq>${project.stars}</span>
+                        <span class="star-count">${project.stars}</span>
                     </span>
                 </div>
             </div>
@@ -317,7 +316,7 @@ if (typeof window !== 'undefined') {
    CONTACT FORM
    ========================================== */
 
-const contactForm = document.getElementById('contactForm');
+const contactForm = document.getElementById('contact-form');
 const notification = document.getElementById('notification');
 
 if (contactForm && notification) {
