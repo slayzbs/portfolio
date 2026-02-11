@@ -166,7 +166,7 @@ const projects = [
     },
     {
         number: '02',
-        title: 'Needlelight',
+        title: 'Example',
         tech: 'c#, python',
         description: 'Blablabla',
         github: 'https://github.com/slayzbs/',
